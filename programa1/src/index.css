@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    nav {
+        @apply flex justify-end items-end gap-[10px] pt-[29px] pr-[40px] text-white
+    }
+    h1 {
+        @apply font-['Pacifico'] text-center text-white font-extrabold text-[44px] leading-[20px]
+    }
+    p {
+        @apply font-['Nunito'] font-normal text-white text-[44px] leading-normal 
+    }
+    h2 {
+        @apply font-['Nunito'] text-center font-extrabold text-[17px] leading-[20px]
+    }
+
+    h3 {
+        @apply font-['Nunito'] text-center font-extrabold text-[17px] leading-[20px]
+    }
+    span {
+        @apply font-['Nunito']  font-light text-[13px] leading-normal
+    }
+    select {
+        @apply rounded-xl bg-white border-[1px] border-solid border-opacity-25 h-[40px] px-2
+    }
+}
+
+@layer components {
+    .b {
+        @apply font-['Nunito'] font-extrabold text-[16px] leading-normal rounded-xl py-[10px] px-[8px]
+                hover:opacity-75
+    }
+    .buttonemogie{
+        @apply rounded-[32px] bg-[#FFFFFF80] py-[10px] px-[12px] border-2 
+        border-[#DDDDDD80] border-dashed  hover:opacity-75
+    }
+    .b1 {
+        @apply font-['Nunito'] font-normal text-[11px] leading-normal rounded-xl bg-[#fff] py-[3px] px-[8px]
+                hover:opacity-75
+    }
+
+    .b2 {
+        @apply font-['Nunito'] font-extrabold text-[12px] leading-normal rounded-xl border-2 border-solid 
+                border-[#0F1115] p-[9px] hover:opacity-75
+    }
+    .b3 {
+        @apply font-['Nunito'] font-extrabold text-[12px] leading-normal rounded-xl bg-white 
+        border-2 border-solid border-[#FF61E2] p-[9px]  text-[#FF61E2] hover:opacity-75
+    }
+    .subtittle {
+        @apply font-['Nunito'] font-extrabold text-[#0F1115] text-[16px] leading-normal
+    }
+}
+
+@layer utilities {
+    .notice {
+        @apply relative top-[-150px] w-full max-w-[1114px] p-[20px] bg-[#FFF] rounded-xl shadow-[#DDD]
+            flex items-center justify-center mx-auto gap-[20px] border-[1px] border-solid border-[#FFFFFF] 
+    }
+    .containers {
+        @apply  relative w-full mx-auto max-w-[1476px] p-[4%] top-[-162px] flex flex-col gap-[20px] bg-[#F5F5F5]
+    }
+
+    .cardcontainer {
+        @apply grid grid-cols-4 rounded-xl px-[2%] h-[88px]  items-center
+    }
+}
