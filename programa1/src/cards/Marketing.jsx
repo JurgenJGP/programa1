@@ -38,7 +38,7 @@ export const Marketing = () => {
             </div>
 
             {expanded && (
-                <div className="relative w-full mx-auto max-w-[1476px] p-[4%]">
+                <div className="flex col-span-4 w-full mx-auto max-w-[1476px] p-[4%] bg-[#fff]">
                     <h2>Whimsical is hiring a</h2>
                     <span>Remote Marketing Designer</span>
                     <h4>Description</h4>
